@@ -1,0 +1,31 @@
+h2 { 
+  color: #1a4071;
+  font-family: 'Spectral SC', serif;
+  margin-top: 3vh;
+  margin-bottom: 1.5vh;
+}
+
+p {
+  font-family: 'Spectral', serif;
+  font-size: 1.1em;
+  margin-top: 1vh;
+}
+
+#about-me {
+  position: absolute;
+  left: 5vw;
+  right: 5vw;
+  overflow-y: auto;
+  height: 80vh;
+ }
+ 
+#about-me-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#about-me-container > img {
+  margin-top: 5vh;
+  border-radius: 30px;
+}
