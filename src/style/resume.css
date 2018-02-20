@@ -1,0 +1,8 @@
+#resume-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2vh;
+  overflow: auto;
+  height: 70vh;
+  width: 80vw;
+}

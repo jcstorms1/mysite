@@ -7,6 +7,12 @@ h1 {
   margin-bottom: 1vh;
 } 
 
+#coming-soon {
+  color: rgb(26, 64, 113);
+  font-family: 'Spectral SC', serif;
+  font-size: 1.75em;
+}
+
 #welcome {
   display: flex;
   justify-content: center;
@@ -103,6 +109,9 @@ h1 {
 
 #go-back {
   color: black;
+  animation: bounce 10s infinite;
+  animation-delay: 10s;
+  /* infinite alternate; */
 }
 
 .btn {
@@ -117,15 +126,6 @@ h1 {
 
 .btn:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-
-#resume-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 2vh;
-  overflow: auto;
-  height: 70vh;
-  width: 80vw;
 }
 
 /* @media only screen and (min-width: 1024px) {
@@ -154,11 +154,12 @@ h1 {
     display: flex;
     flex-direction: column;
     width: 60vw;
+    height: 30vh;
     margin-left: 10vw;
   }
 
   .btn {
-    height: 5vh;
+    height: 8vh;
     width: 25vw;
     position: relative;
   }

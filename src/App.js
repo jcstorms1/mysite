@@ -3,6 +3,7 @@ import { Route, withRouter } from "react-router-dom";
 import Welcome from "./components/welcome";
 import AboutMe from "./components/aboutMe";
 import Resume from "./components/resume";
+import Projects from "./containers/projects";
 import Links from "./components/links";
 import "./App.css";
 
@@ -16,6 +17,9 @@ class App extends Component {
     switch (e.target.name) {
       case "about":
         this.props.history.push("/about");
+        break;
+      case "projects":
+        this.props.history.push("/projects");
         break;
       case "resume":
         this.props.history.push("/resume");
@@ -41,11 +45,6 @@ class App extends Component {
       <div
         id="welcome"
         style={Object.assign({}, this.state.fullView && styles.fill)}
-        // Object.assign(
-        // {},
-        // styles.welcome,
-        // !this.state.normalView && styles.buttonEnabled
-        // )}
       >
         <Links showHome={this.state.fullView} goBack={this.goBack} />
         <div id="welcome-box">
@@ -69,6 +68,11 @@ class App extends Component {
             exact
             path="/about"
             render={() => <AboutMe goBack={this.goBack} />}
+          />
+          <Route
+            exact
+            path="/projects"
+            render={() => <Projects goBack={this.goBack} />}
           />
           <Route
             exact
