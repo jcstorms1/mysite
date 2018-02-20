@@ -12,7 +12,12 @@ const Welcome = props => {
       >
         About Me
       </button>
-      <button className="btn" id="projects-btn">
+      <button
+        className="btn"
+        id="projects-btn"
+        name="projects"
+        onClick={props.btnClick}
+      >
         Projects
       </button>
       <button

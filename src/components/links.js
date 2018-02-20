@@ -14,10 +14,14 @@ const Links = props => {
         </a>
       </button>
       <button className="links-btn" onClick={() => console.log("hi")}>
-        <i className="fab fa-linkedin fa-2x linkedin" />
+        <a href="https://www.linkedin.com/in/jordan-storms-877673b7/">
+          <i className="fab fa-linkedin fa-2x linkedin" />
+        </a>
       </button>
       <button className="links-btn" onClick={() => console.log("hi")}>
-        <i className="fab fa-medium fa-2x links-icon" />
+        <a href="https://medium.com/@jordanstorms">
+          <i className="fab fa-medium fa-2x links-icon" />
+        </a>
       </button>
     </div>
   );

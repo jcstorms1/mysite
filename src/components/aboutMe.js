@@ -12,8 +12,9 @@ const AboutMe = props => {
           I'm a full stack web developer located in New Jersey. I've done a lot,
           from pumping gas to pursuing a Ph.D in Computational Neuroscience.
           During grad school I taught myself Python and I was hooked, ready to
-          take a new path. Coding has allowed me to creatively solve problems
-          and build applications that help make life better and more fun. I'm
+          take a new path. From there I learned JavaScript, Ruby, Ruby on Rails
+          and much more. Coding has allowed me to creatively solve problems and
+          build applications that help make life better and more fun. I'm
           excited to see where this ride takes me next.
         </p>
       </div>
