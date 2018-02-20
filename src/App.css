@@ -94,6 +94,13 @@ h1 {
   color: rgba(0, 0, 0, .8);
 }
 
+.linkedin {
+  color: rgba(0, 0, 0, 0.2);
+}
+.linkedin:hover {
+  color: rgba(0, 119, 181, 1);
+}
+
 #go-back {
   color: black;
 }
@@ -111,6 +118,7 @@ h1 {
 .btn:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
+
 
 /* @media only screen and (min-width: 1024px) {
 }

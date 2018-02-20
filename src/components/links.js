@@ -9,13 +9,15 @@ const Links = props => {
         </button>
       ) : null}
       <button className="links-btn" onClick={() => console.log("hi")}>
-        <i id="go-github" className="fab fa-github fa-2x links-icon" />
+        <a href="https://github.com/jcstorms1">
+          <i className="fab fa-github fa-2x links-icon" />
+        </a>
       </button>
       <button className="links-btn" onClick={() => console.log("hi")}>
-        <i id="go-github" className="fab fa-linkedin fa-2x links-icon" />
+        <i className="fab fa-linkedin fa-2x linkedin" />
       </button>
       <button className="links-btn" onClick={() => console.log("hi")}>
-        <i id="go-github" className="fab fa-medium fa-2x links-icon" />
+        <i className="fab fa-medium fa-2x links-icon" />
       </button>
     </div>
   );
