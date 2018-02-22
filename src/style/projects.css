@@ -1,3 +1,15 @@
+h3 {
+  color: rgba(26, 64, 113,1);
+  font-family: 'Spectral SC', serif;
+  font-size: 1.25em;
+}
+
+p {
+  font-family: 'Spectral', serif;
+  font-size: 1.1em;
+  margin-top: 1vh;
+}
+
 #projects {
   overflow-y: auto;
   height: 75vh;
@@ -18,7 +30,7 @@
 
 .card {
   height: auto;
-  width: 45vw;
+  width: 100%;
   transform-style: preserve-3d;
   transition: all .8s linear;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
@@ -28,16 +40,18 @@
 .card > img {
   position: relative;
   display: block;
-  width: 45vw;
+  width: 100%;
   height: auto;
   backface-visibility: hidden;
 }
 
 .card > .back {
+  display: flex;
+  flex-direction: column;
   position: absolute;
   top: 0;
   left: 0;
-  width: 45vw;
+  width: 100%;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.8);
   transform: rotateY(180deg);
@@ -54,5 +68,60 @@
 .card:hover {
   transform: rotateY(180deg);
   box-shadow: -5px 5px 5px rgba(0,0,0,0.2);
+}
+
+.summary {
+  height: 10%;
+  width: 100%;
+}
+.project-name {
+  font-size: 1.5vh;
+  margin-bottom: 0;
+  margin-top: 1vh;
+}
+
+.project-description {
+  font-size: 1vw;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.left, .right {
+  margin: 0 auto;
+  width: 50%;
+  height: 40%
+}
+
+.overview {
+  display: flex;
+  height: 50%;
+}
+
+.overview-header {
+  font-size: 0.75vh;
+  margin-top: 0.5vh;
+  margin-bottom: 0;
+}
+
+.overview-content {
+  font-size: 0.5vh;
+  margin: 0;
+}
+
+.overview-btn {
+  height: 2vh;
+  margin: auto;
+  margin-top: 1vh;
+  font-size: 1vh;
+  width: 15vw;
+  border-radius: 5px;
+  background-color: rgb(26, 64, 113);
+  color: white;
+}
+
+@media only screen and (max-width: 480px) {
+  .projects-container {
+    width: 80vw;
+  }
 }
 
