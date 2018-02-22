@@ -4,7 +4,7 @@ import "../style/resume.css";
 
 const Resume = props => {
   return (
-    <div>
+    <div id="resume-page">
       <div id="resume-container">
         <iframe
           title="resume"

@@ -1,3 +1,8 @@
+#resume-page {
+  height: 75vh;
+  overflow: auto;
+}
+
 #resume-container {
   display: flex;
   justify-content: center;
@@ -5,4 +10,5 @@
   overflow: auto;
   height: 70vh;
   width: 80vw;
+  overflow-y: auto;
 }
