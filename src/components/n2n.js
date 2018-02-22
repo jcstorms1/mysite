@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const N2N = () => {
   return (
@@ -8,8 +9,8 @@ const N2N = () => {
         <div className="Summary">
           <h3 className="project-name">LoLei</h3>
           <p className="project-description">
-            An app designed for parents or teachers to track and manage the
-            books their children or students have read.
+            N2N allows users to search for food or drink venues that can be
+            added to a list and marked as visited.
           </p>
         </div>
         <div className="overview">
@@ -17,18 +18,20 @@ const N2N = () => {
             <h3 className="overview-header">Built With</h3>
             <p className="overview-content">React / Redux</p>
             <p className="overview-content">Rails</p>
-            <p className="overview-content">Semantic UI React</p>
+            <p className="overview-content">React Materialize</p>
           </div>
           <hr />
           <div className="right">
             <h3 className="overview-header">Key Features</h3>
-            <p className="overview-content">Admin and User Accounts</p>
-            <p className="overview-content">Amazon Products API</p>
+            <p className="overview-content">Foursquare API</p>
+            <p className="overview-content">Google Maps</p>
           </div>
         </div>
         <div className="btn-container">
-          <button className="overview-btn">Github</button>
-          <button className="overview-btn">Demo</button>
+          <Link to="https://github.com/jcstorms1/new2neighborhood-frontend">
+            <button className="overview-btn">Github</button>
+          </Link>
+          <button className="overview-btn disabled">Demo Soon</button>
         </div>
       </div>
     </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Noggle = () => {
   return (
@@ -8,27 +9,32 @@ const Noggle = () => {
         <div className="Summary">
           <h3 className="project-name">Noggle</h3>
           <p className="project-description">
-            An app designed for parents or teachers to track and manage the
-            books their children or students have read.
+            Noggle is a multi-player anagram game where players find as many
+            three or more letter words as they can in a minute.
           </p>
         </div>
         <div className="overview">
           <div className="left">
             <h3 className="overview-header">Built With</h3>
-            <p className="overview-content">React / Redux</p>
+            <p className="overview-content">Javascript</p>
             <p className="overview-content">Rails</p>
-            <p className="overview-content">Semantic UI React</p>
+            <p className="overview-content">Bulma & Custom Css</p>
           </div>
           <hr />
           <div className="right">
             <h3 className="overview-header">Key Features</h3>
-            <p className="overview-content">Admin and User Accounts</p>
-            <p className="overview-content">Amazon Products API</p>
+            <p className="overview-content">Action Cable Websockets</p>
+            <p className="overview-content">Angramica API</p>
+            <p className="overview-content">Live Chat & Realtime Scoring</p>
           </div>
         </div>
         <div className="btn-container">
-          <button className="overview-btn">Github</button>
-          <button className="overview-btn">Demo</button>
+          <Link to="https://github.com/jcstorms1/noggle-app">
+            <button className="overview-btn">Github</button>
+          </Link>
+          <Link to="https://jamesgraham320.github.io/noggle-app/">
+            <button className="overview-btn">Demo</button>
+          </Link>
         </div>
       </div>
     </div>

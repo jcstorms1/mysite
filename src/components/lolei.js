@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Lolei = () => {
   return (
@@ -27,8 +28,12 @@ const Lolei = () => {
           </div>
         </div>
         <div className="btn-container">
-          <button className="overview-btn">Github</button>
-          <button className="overview-btn">Demo</button>
+          <Link to="https://github.com/jcstorms1/lolei">
+            <button className="overview-btn">Github</button>
+          </Link>
+          <Link to="https://lo-lei.com">
+            <button className="overview-btn">Demo</button>
+          </Link>
         </div>
       </div>
     </div>

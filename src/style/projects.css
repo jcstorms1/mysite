@@ -17,6 +17,7 @@ p {
 
 #projects-header{
   margin-top: 1vh;
+  margin-bottom: 2.5vh;
 }
 
 .projects-container {
@@ -25,7 +26,7 @@ p {
   margin: 0 auto;
   height: auto;
   width: 45vw;
-  perspective: 5000;
+  perspective: 2000;
 }
 
 .card {
@@ -33,6 +34,7 @@ p {
   width: 100%;
   transform-style: preserve-3d;
   transition: all .8s linear;
+  transition-delay: 0.5s;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
 
 }
@@ -82,11 +84,13 @@ p {
 
 .project-description {
   font-size: calc((.1em + .6vmin) + (.1em + .6vmax));
+  font-family: 'Spectral', serif;
   margin: 0 auto;
   width: 90%;
 }
 
 .left, .right {
+ 
   margin: 0 auto;
   width: 50%;
   height: 40%
@@ -110,7 +114,6 @@ p {
 
 .btn-container {
   display: flex;
-  width: 50%;
   margin: 0 auto 1vh;
 }
 
@@ -119,7 +122,7 @@ p {
   margin: 1vh;
   margin-top: 1vh;
   font-size: calc((.1em + .6vmin) + (.1em + .6vmax));
-  width: 20vw;
+  width: 10vw;
   border-radius: 5px;
   background-color: rgb(26, 64, 113);
   color: white;
@@ -128,9 +131,17 @@ p {
 .overview-btn:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
+
+.disabled {
+  background-color: rgba(0,0,0,0.24);
+}
 @media only screen and (max-width: 480px) {
   .projects-container {
     width: 80vw;
+  }
+
+  .overview-btn {
+    width: 20vw;
   }
 }
 
