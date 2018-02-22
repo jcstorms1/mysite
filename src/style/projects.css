@@ -75,13 +75,13 @@ p {
   width: 100%;
 }
 .project-name {
-  font-size: 1.5vh;
+  font-size: calc((.4em + .6vmin) + (.4em + .6vmax));
   margin-bottom: 0;
   margin-top: 1vh;
 }
 
 .project-description {
-  font-size: 1vw;
+  font-size: calc((.1em + .6vmin) + (.1em + .6vmax));
   margin: 0 auto;
   width: 90%;
 }
@@ -98,27 +98,36 @@ p {
 }
 
 .overview-header {
-  font-size: 0.75vh;
-  margin-top: 0.5vh;
+  font-size: calc((.2em + .5vmin) + (.2em + .5vmax));
+  margin-top: 1vh;
   margin-bottom: 0;
 }
 
 .overview-content {
-  font-size: 0.5vh;
+  font-size: calc((.1em + .5vmin) + (.1em + .5vmax));
   margin: 0;
 }
 
+.btn-container {
+  display: flex;
+  width: 50%;
+  margin: 0 auto 1vh;
+}
+
 .overview-btn {
-  height: 2vh;
-  margin: auto;
+  height: 3vh;
+  margin: 1vh;
   margin-top: 1vh;
-  font-size: 1vh;
-  width: 15vw;
+  font-size: calc((.1em + .6vmin) + (.1em + .6vmax));
+  width: 20vw;
   border-radius: 5px;
   background-color: rgb(26, 64, 113);
   color: white;
 }
 
+.overview-btn:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
 @media only screen and (max-width: 480px) {
   .projects-container {
     width: 80vw;

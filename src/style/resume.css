@@ -6,9 +6,20 @@
 #resume-container {
   display: flex;
   justify-content: center;
-  margin-top: 2vh;
+  margin: 2vh auto;
   overflow: auto;
   height: 70vh;
   width: 80vw;
   overflow-y: auto;
+}
+
+@media only screen and (max-width: 480px) {
+  #resume-container {
+    display: flex;
+    justify-content: center;
+    margin: 2vh auto;
+    overflow: auto;
+    height: 70vh;
+    width: 80vw;
+  }
 }
