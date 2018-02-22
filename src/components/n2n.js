@@ -7,7 +7,7 @@ const N2N = () => {
       <img src={require("../img/n2n-home.png")} alt="lolei.com landing page" />
       <div className="back">
         <div className="Summary">
-          <h3 className="project-name">LoLei</h3>
+          <h3 className="project-name">New2Neighborhood</h3>
           <p className="project-description">
             N2N allows users to search for food or drink venues that can be
             added to a list and marked as visited.
@@ -28,9 +28,12 @@ const N2N = () => {
           </div>
         </div>
         <div className="btn-container">
-          <Link to="https://github.com/jcstorms1/new2neighborhood-frontend">
+          <form
+            target="#"
+            action="https://github.com/jcstorms1/new2neighborhood-frontend"
+          >
             <button className="overview-btn">Github</button>
-          </Link>
+          </form>
           <button className="overview-btn disabled">Demo Soon</button>
         </div>
       </div>

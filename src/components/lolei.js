@@ -28,12 +28,12 @@ const Lolei = () => {
           </div>
         </div>
         <div className="btn-container">
-          <Link to="https://github.com/jcstorms1/lolei">
+          <form target="#" action="https://github.com/jcstorms1/lolei">
             <button className="overview-btn">Github</button>
-          </Link>
-          <Link to="https://lo-lei.com">
+          </form>
+          <form target="#" action="https://lo-lei.com">
             <button className="overview-btn">Demo</button>
-          </Link>
+          </form>
         </div>
       </div>
     </div>
