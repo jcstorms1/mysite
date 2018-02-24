@@ -29,7 +29,7 @@ const N2N = () => {
         </div>
         <div className="btn-container">
           <form
-            target="#"
+            target="_blank"
             action="https://github.com/jcstorms1/new2neighborhood-frontend"
           >
             <button className="overview-btn">Github</button>

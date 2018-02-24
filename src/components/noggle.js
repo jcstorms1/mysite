@@ -29,11 +29,14 @@ const Noggle = () => {
           </div>
         </div>
         <div className="btn-container">
-          <form target="#" action="https://github.com/jcstorms1/noggle-app">
+          <form
+            target="_blank"
+            action="https://github.com/jcstorms1/noggle-app"
+          >
             <button className="overview-btn">Github</button>
           </form>
           <form
-            target="#"
+            target="_blank"
             action="https://jamesgraham320.github.io/noggle-app/"
           >
             <button className="overview-btn">Demo</button>
