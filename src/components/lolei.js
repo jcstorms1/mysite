@@ -28,10 +28,10 @@ const Lolei = () => {
           </div>
         </div>
         <div className="btn-container">
-          <form target="_blank" action="https://github.com/jcstorms1/lolei">
+          <form action="https://github.com/jcstorms1/lolei">
             <button className="overview-btn">Github</button>
           </form>
-          <form target="_blank" action="https://lo-lei.com">
+          <form action="https://lo-lei.com">
             <button className="overview-btn">Demo</button>
           </form>
         </div>
